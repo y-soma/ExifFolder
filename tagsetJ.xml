@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- PVE.exe -->
+<!-- ファイルヘッダ仕様書_V54.xls（D4244用） に準拠 -->
+<!-- 039_01_メーカーノートタグ仕様.xls に準拠 -->
+<!-- dng_spec.pdf(Version 1.1.0.0 February 2005) に準拠 -->
+
+<ifd>
+	<entry val="0x00FE" name="NewSubfileType" />
+	<entry val="0x00FF" name="SubfileType" />
+	<entry val="0x0100" name="画像の幅" />
+	<entry val="0x0101" name="画像の高さ" />
+	<entry val="0x0102" name="画像のビットの深さ" />
+	<entry val="0x0103" name="圧縮の種類" />
+	<entry val="0x0106" name="画素構成" />
+	<entry val="0x0107" name="Threshholding" />
+	<entry val="0x0108" name="CellWidth" />
+	<entry val="0x0109" name="CellLength" />
+	<entry val="0x010A" name="FillOrder" />
+	<entry val="0x010D" name="DocumentName" />
+	<entry val="0x010E" name="画像タイトル" />
+	<entry val="0x010F" name="画像入力機器のメーカー名" />
+	<entry val="0x0110" name="画像入力機器のモデル名" />
+	<entry val="0x0111" name="画像データのロケーション" />
+	<entry val="0x0112" name="画像方向" />
+	<entry val="0x0115" name="コンポーネント数" />
+	<entry val="0x0116" name="1 ストリップあたりの行数" />
+	<entry val="0x0117" name="ストリップの総バイト数" />
+	<entry val="0x0118" name="MinSampleValue" />
+	<entry val="0x0119" name="MaxSampleValue" />
+	<entry val="0x011A" name="画像の幅の解像度" />
+	<entry val="0x011B" name="画像の高さの解像度" />
+	<entry val="0x011C" name="画像データの並び" />
+	<entry val="0x011D" name="PageName" />
+	<entry val="0x011E" name="XPosition" />
+	<entry val="0x011F" name="YPosition" />
+	<entry val="0x0120" name="FreeOffsets" />
+	<entry val="0x0121" name="FreeByteCounts" />
+	<entry val="0x0122" name="GrayResponseUnit" />
+	<entry val="0x0123" name="GrayResponseCurve" />
+	<entry val="0x0124" name="T4Options" />
+	<entry val="0x0125" name="T6Options" />
+	<entry val="0x0128" name="画像の幅と高さの解像度の単位" />
+	<entry val="0x0129" name="PageNumber" />
+	<entry val="0x012D" name="再生階調カーブ特性" />
+	<entry val="0x0131" name="使用ソフトウェア名" />
+	<entry val="0x0132" name="ファイル変更日時" />
+	<entry val="0x013B" name="作者名" />
+	<entry val="0x013C" name="HostComputer" />
+	<entry val="0x013D" name="Predictor" />
+	<entry val="0x013E" name="参照白色点の色度座標値" />
+	<entry val="0x013F" name="原色の色度座標値" />
+	<entry val="0x0140" name="ColorMap" />
+	<entry val="0x0141" name="HalftoneHints" />
+	<entry val="0x0142" name="TileWidth" />
+	<entry val="0x0143" name="TileLength" />
+	<entry val="0x0144" name="TileOffsets" />
+	<entry val="0x0145" name="TileByteCounts" />
+	<entry val="0x014C" name="InkSet" />
+	<entry val="0x014D" name="InkNames" />
+	<entry val="0x014E" name="NumberOfInks" />
+	<entry val="0x0150" name="DotRange" />
+	<entry val="0x0151" name="TargetPrinter" />
+	<entry val="0x0152" name="ExtraSamples" />
+	<entry val="0x0153" name="SampleFormat" />
+	<entry val="0x0154" name="SMinSampleValue" />
+	<entry val="0x0155" name="SMaxSampleValue" />
+	<entry val="0x0156" name="TransferRange" />
+	<entry val="0x0200" name="JpegProc" />
+	<entry val="0x0201" name="JPEG のSOI へのオフセット" />
+	<entry val="0x0202" name="JPEG データのバイト数" />
+	<entry val="0x0203" name="JpegRestartInterval" />
+	<entry val="0x0205" name="JpegLosslessPredictors" />
+	<entry val="0x0206" name="JpegPointTransforms" />
+	<entry val="0x0207" name="JpegQ_tables" />
+	<entry val="0x0208" name="JpegDcTables" />
+	<entry val="0x0209" name="JpegAcTables" />
+	<entry val="0x0211" name="色変換マトリクス係数" />
+	<entry val="0x0212" name="YCC の画素構成（C の間引き率）" />
+	<entry val="0x0213" name="YCC の画素構成（Y とC の位置）" />
+	<entry val="0x0214" name="参照黒色点値と参照白色点値" />
+	<entry val="0x02BC" name="XMP metadata" />
+	<entry val="0x8298" name="撮影著作権者/編集著作権者" />
+	<entry val="0x014A" name="SubIfds" />
+	<entry val="0x0157" name="ClipPath" />
+	<entry val="0x0158" name="XClipPathUnits" />
+	<entry val="0x0159" name="YClipPathUnits" />
+	<entry val="0x015A" name="Indexed" />
+	<entry val="0x015F" name="OPIProxy" />
+	<entry val="0x800D" name="ImageID" />
+	<entry val="0x84E3" name="IT8RasterPadding" />
+	<entry val="0x84E6" name="IT8ColorTable" />
+	<entry val="0x015B" name="JpegTables" />
+	<entry val="0x83BB" name="IPTC-NAA" />
+	<entry val="0x8649" name="ImageResources" />
+	<entry val="0x8773" name="InterColorProfile" />
+	<entry val="0x9216" name="TiffEPStandardID" />
+	<entry val="0x935C" name="ImageSourceData" />
+	<entry val="0xC44F" name="Annotations" />
+	<entry val="0xC4A5" name="PrintImageMatching" />
+<entry val="0x828D" name="CFARepeatPatternDim" />
+<entry val="0x828E" name="CFAPattern" />
+<entry val="0x828F" name="BatteryLevel" />
+<!-- DNG ココカラ -->
+<entry val="0xC612" name="DNG:DNGVersion" />
+<entry val="0xC613" name="DNG:DNGBackwardVersion" />
+<entry val="0xC614" name="DNG:UniqueCameraModel" />
+<entry val="0xC615" name="DNG:LocalizedCameraModel" />
+<entry val="0xC616" name="DNG:CFAPlaneColor" />
+<entry val="0xC617" name="DNG:CFALayout" />
+<entry val="0xC618" name="DNG:LinearizationTable" />
+<entry val="0xC619" name="DNG:BlackLevelRepeatDim" />
+<entry val="0xC61A" name="DNG:BlackLevel" />
+<entry val="0xC61B" name="DNG:BlackLevelDeltaH" />
+<entry val="0xC61C" name="DNG:BlackLevelDeltaV" />
+<entry val="0xC61D" name="DNG:WhiteLevel" />
+<entry val="0xC61E" name="DNG:DefaultScale" />
+<entry val="0xC61F" name="DNG:DefaultCropOrigin" />
+<entry val="0xC620" name="DNG:DefaultCropSize" />
+<entry val="0xC621" name="DNG:ColorMatrix1" />
+<entry val="0xC622" name="DNG:ColorMatrix2" />
+<entry val="0xC623" name="DNG:CameraCalibration1" />
+<entry val="0xC624" name="DNG:CameraCalibration2" />
+<entry val="0xC625" name="DNG:ReductionMatrix1" />
+<entry val="0xC626" name="DNG:ReductionMatrix2" />
+<entry val="0xC627" name="DNG:AnalogBalance" />
+<entry val="0xC628" name="DNG:AsShotNeutral" />
+<entry val="0xC629" name="DNG:AsShotWhiteXY" />
+<entry val="0xC62A" name="DNG:BaselineExposure" />
+<entry val="0xC62B" name="DNG:BaselineNoise" />
+<entry val="0xC62C" name="DNG:BaselineSharpness" />
+<entry val="0xC62D" name="DNG:BayerGreenSplit" />
+<entry val="0xC62E" name="DNG:LinearResponseLimit" />
+<entry val="0xC62F" name="DNG:CameraSerialNumber" />
+<entry val="0xC630" name="DNG:LensInfo" />
+<entry val="0xC631" name="DNG:ChromaBlurRadius" />
+<entry val="0xC632" name="DNG:AntiAliasStrength" />
+<entry val="0xC634" name="DNG:DNGPrivateData" />
+<entry val="0xC635" name="DNG:MakerNoteSafety" />
+<entry val="0xC633" name="DNG:ShadowScale" />
+<entry val="0xC65A" name="DNG:CalibrationIlluminant1" />
+<entry val="0xC65B" name="DNG:CalibrationIlluminant2" />
+<entry val="0xC65C" name="DNG:BestQualityScale" />
+<entry val="0xC65D" name="DNG:RawDataUniqueID" />
+<entry val="0xC68B" name="DNG:OriginalRawFileName" />
+<entry val="0xC68C" name="DNG:OriginalRawFileData" />
+<entry val="0xC68D" name="DNG:ActiveArea" />
+<entry val="0xC68E" name="DNG:MaskedAreas" />
+<entry val="0xC68F" name="DNG:AsShotICCProfile" />
+<entry val="0xC690" name="DNG:AsShotPreProfileMatrix" />
+<entry val="0xC691" name="DNG:CurrentICCProfile" />
+<entry val="0xC692" name="DNG:CurrentPreProfileMatrix" />
+<!-- DNG ココマデ -->
+	<ifd type="long" val="0x8769" name="Exif タグ" ifd_name="Exif IFD">
+		<entry val="0x9000" name="Exif バージョン" />
+		<entry val="0xA000" name="対応フラッシュピックスバージョン" />
+		<entry val="0xA001" name="色空間情報" />
+		<entry val="0x9101" name="各コンポーネントの意味" />
+		<entry val="0x9102" name="画像圧縮モード" />
+		<entry val="0xA002" name="実効画像幅" />
+		<entry val="0xA003" name="実効画像高さ" />
+		<entry val="0x9286" name="ユーザーコメント" />
+		<entry val="0xA004" name="関連音声ファイル" />
+		<entry val="0x9003" name="原画像データの生成日時" />
+		<entry val="0x9004" name="ディジタルデータの作成日時" />
+		<entry val="0x9290" name="DateTime のサブセック" />
+		<entry val="0x9291" name="DateTimeOriginal のサブセック" />
+		<entry val="0x9292" name="DateTimeDigitized のサブセック" />
+		<entry val="0x829A" name="露出時間" />
+		<entry val="0x829D" name="F ナンバー" />
+		<entry val="0x8822" name="露出プログラム" />
+		<entry val="0x8824" name="スペクトル感度" />
+		<entry val="0x8827" name="ISO スピードレート" />
+		<entry val="0x8828" name="光電変換関数" />
+		<entry val="0x9201" name="シャッタースピード" />
+		<entry val="0x9202" name="絞り値" />
+		<entry val="0x9203" name="輝度値" />
+		<entry val="0x9204" name="露光補正値" />
+		<entry val="0x9205" name="レンズ最小Ｆ値" />
+		<entry val="0x9206" name="被写体距離" />
+		<entry val="0x9207" name="測光方式" />
+		<entry val="0x9208" name="光源" />
+		<entry val="0x9209" name="フラッシュ" />
+		<entry val="0x920A" name="レンズ焦点距離" />
+		<entry val="0x9214" name="被写体領域" />
+		<entry val="0xA20B" name="フラッシュ強度" />
+		<entry val="0xA20C" name="空間周波数応答" />
+		<entry val="0xA20E" name="焦点面の幅の解像度" />
+		<entry val="0xA20F" name="焦点面の高さの解像度" />
+		<entry val="0xA210" name="焦点面解像度単位" />
+		<entry val="0xA214" name="被写体位置" />
+		<entry val="0xA215" name="露出インデックス" />
+		<entry val="0xA217" name="センサー方式" />
+		<entry val="0xA300" name="ファイルソース" />
+		<entry val="0xA301" name="シーンタイプ" />
+		<entry val="0xA302" name="CFA パターン" />
+		<entry val="0xA401" name="個別画像処理" />
+		<entry val="0xA402" name="露出モード" />
+		<entry val="0xA403" name="ホワイトバランス" />
+		<entry val="0xA404" name="ディジタルズーム倍率" />
+		<entry val="0xA405" name="35mm 換算レンズ焦点距離" />
+		<entry val="0xA406" name="撮影シーンタイプ" />
+		<entry val="0xA407" name="ゲイン制御" />
+		<entry val="0xA408" name="撮影コントラスト" />
+		<entry val="0xA409" name="撮影彩度" />
+		<entry val="0xA40A" name="撮影シャープネス" />
+		<entry val="0xA40B" name="撮影条件記述情報" />
+		<entry val="0xA40C" name="被写体距離レンジ" />
+		<entry val="0xA420" name="画像ユニークID" />
+		<entry val="0xA500" name="再生ガンマ" />
+		<ifd type="long" val="0xA005" name="互換性IFD へのポインタ" ifd_name="InterOpera">
+			<entry val="0x0001" name="互換識別インデックス" />
+			<entry val="0x0002" name="互換バージョン" />
+			<entry val="0x1000" name="関連画像ファイル形式" />
+			<entry val="0x1001" name="関連画像の幅" />
+			<entry val="0x1002" name="関連画像の高さ" />
+		</ifd>
+		<ifd type="makernote" val="0x927C" name="メーカーノート" ifd_name="MakerNote">
+		<!-- OLYMPUS Tone table File 用 ココカラ -->
+			<entry val="0xF001" name="テーブルセット番号" />
+			<entry val="0xF002" name="スクランブルタイプ" />
+			<ifd type="undefined" val="0xF010" name="階調補正用テーブルIFD" ifd_name="MakerNote::ToneTable IFD">
+				<entry val="0x0000" name="map" />
+				<entry val="0x0001" name="table 1" /><entry val="0x0002" name="table 2" /><entry val="0x0003" name="table 3" />
+				<entry val="0x0004" name="table 4" /><entry val="0x0005" name="table 5" /><entry val="0x0006" name="table 6" />
+				<entry val="0x0007" name="table 7" /><entry val="0x0008" name="table 8" /><entry val="0x0009" name="table 9" />
+			</ifd>
+			<ifd type="undefined" val="0xF011" name="エッジ階調補正用テーブルIFD" ifd_name="MakerNote::EdgeTable IFD">
+				<entry val="0x0000" name="map" />
+				<entry val="0x0001" name="table 1" /><entry val="0x0002" name="table 2" /><entry val="0x0003" name="table 3" />
+				<entry val="0x0004" name="table 4" /><entry val="0x0005" name="table 5" /><entry val="0x0006" name="table 6" />
+				<entry val="0x0007" name="table 7" /><entry val="0x0008" name="table 8" /><entry val="0x0009" name="table 9" />
+			</ifd>
+		<!-- OLYMPUS Tone table File 用 ココマデ -->
+
+		<!-- OLYMPUS ArtWrok 用 ココカラ -->
+			<ifd type="undefined" val="0xF100" name="アートワークIFD" ifd_name="MakerNote::ArtWork IFD">
+				<entry val="0x0000" name="バージョン" />
+				<entry val="0x0001" name="シリアル番号" />
+				<entry val="0x0002" name="地域" />
+				<entry val="0x0003" name="カテゴリー" />
+				<entry val="0x0004" name="ファイルタイプ" />
+				<entry val="0x0020" name="オブジェクトの幅" />
+				<entry val="0x0021" name="オブジェクトの高さ" />
+				<entry val="0x0022" name="Ｘ座標" />
+				<entry val="0x0023" name="Ｙ座標" />
+				<entry val="0x0024" name="Ｚオーダー" />
+				<entry val="0x0025" name="８ビットカラー情報" />
+				<entry val="0x0026" name="回転情報" />
+				<entry val="0x0027" name="補正率" />
+				<entry val="0x0800" name="PNG画像" />
+				<entry val="0x0801" name="PNGマスク画像" />
+				<entry val="0x0802" name="バイナリデータ" />
+				<entry val="0x0803" name="ファイルパス" />
+				<entry val="0x0810" name="画像マッピング方法" />
+				<entry val="0x0811" name="自動回転方向" />
+				<entry val="0x0812" name="手動回転量" />
+				<entry val="0x0820" name="ページ番号" />
+				<entry val="0x0821" name="印刷マッピング方法" />
+				<entry val="0x0822" name="保存方法" />
+				<entry val="0x0823" name="レイアウトタイプ" />
+				<entry val="0x0824" name="ページ数" />
+				<entry val="0x0825" name="インデックスＩＤ" />
+				<entry val="0x0826" name="配置情報ＩＤ" />
+				<entry val="0x0827" name="ＩＤ参照" />
+				<entry val="0x0828" name="オブジェクト属性" />
+				<entry val="0x0830" name="文字データ" />
+				<entry val="0x0831" name="フォント名" />
+				<entry val="0x0832" name="フォントポイント" />
+				<entry val="0x0883" name="テキストスタイル" />
+				<entry val="0x0840" name="年の位置" />
+				<entry val="0x0841" name="月数" />
+				<entry val="0x0842" name="日数" />
+				<entry val="0x0843" name="カレンダー形式" />
+				<entry val="0x0844" name="日付の幅" />
+				<entry val="0x0845" name="日付の高さ" />
+				<entry val="0x0846" name="日付のＸ座標" />
+				<entry val="0x0847" name="日付のＹ座標" />
+				<entry val="0x0848" name="曜日の幅" />
+				<entry val="0x0849" name="曜日の高さ" />
+				<entry val="0x084A" name="曜日のＸ座標" />
+				<entry val="0x084B" name="曜日のＹ座標" />
+				<entry val="0x084C" name="日付の画像" />
+				<entry val="0x0860" name="背景の配置方法" />
+				<entry val="0x1000" name="ページ情報" />
+				<entry val="0x1001" name="オブジェクトインデックス" />
+				<entry val="0x1002" name="オブジェクト配置情報" />
+				<entry val="0x1005" name="月情報" />
+			</ifd>
+		<!-- OLYMPUS ArtWrok 用 ココマデ -->
+
+<entry val="0x0100" name="サムネイルファイル" />
+<entry val="0x0104" name="BODYファームバージョン" /><!-- ←D4261 -->
+			<entry val="0x0200" name="連写情報" />
+<entry val="0x0201" name="解像度" />
+<entry val="0x0202" name="マクロモード" />
+<entry val="0x0203" name="カラーモード" />
+<entry val="0x0204" name="デジタルズーム" />
+			<entry val="0x0205" name="CCDの対角長" />
+			<entry val="0x0206" name="レンズ収差情報" />
+<entry val="0x0207" name="カメラタイプ" />
+<entry val="0x0208" name="画像情報" />
+<entry val="0x0209" name="カメラID" />
+			<entry val="0x0225" name="ファームウェアマイナーバージョン" />
+			<entry val="0x0300" name="プリキャプチャ" />
+			<entry val="0x0301" name="ホワイトボード" />
+			<entry val="0x0302" name="光源" />
+			<entry val="0x0303" name="WBステップ数" />
+			<entry val="0x0304" name="WB補正値" />
+<entry val="0x0305" name="RAW互換性判定" />
+<entry val="0x0306" name="光源表示情報" />
+<entry val="0x0400" name="動体予測AF" />
+<entry val="0x0401" name="AF合焦情報" />
+<entry val="0x0402" name="AF方式" />
+<entry val="0x0403" name="シーンプログラム" />
+<entry val="0x0404" name="カメラシリアル" />
+<entry val="0x0405" name="ファームバージョン" />
+<entry val="0x0500" name="WBモード③" /><!-- ←D4261 -->
+<entry val="0x0F00" name="調査用" />
+			<entry val="0x1000" name="ｼｬｯﾀ速(SUBV微調)" />
+			<entry val="0x1001" name="ｹﾞｲﾝ" />
+			<entry val="0x1002" name="絞り段数" />
+			<entry val="0x1003" name="被写体輝度" />
+			<entry val="0x1004" name="ストロボモード" />
+			<entry val="0x1005" name="発光時のストロボ状態" />
+			<entry val="0x1006" name="AE測光ﾓｰﾄﾞ露出補正" />
+			<entry val="0x1007" name="CCD温度検出値" />
+			<entry val="0x1008" name="鏡枠温度" />
+			<entry val="0x1009" name="逆光判定結果" />
+			<entry val="0x100A" name="撮影範囲" />
+			<entry val="0x100B" name="ﾌｫｰｶｽﾓｰﾄﾞ" />
+			<entry val="0x100C" name="設定距離" />
+			<entry val="0x100D" name="撮影時ｽﾞｰﾑ位置" />
+			<entry val="0x100E" name="撮影時ﾌｫｰｶｽ位置" />
+			<entry val="0x100F" name="画像のｼｬｰﾌﾟﾈｽ [RAW]" />
+			<entry val="0x1010" name="ﾌﾟﾘ発光開始時充電電圧 A/D値" />
+			<entry val="0x1011" name="カラーマトリクスデータ [RAW]" />
+			<entry val="0x1012" name="OB値 [RAW]" />
+			<entry val="0x1013" name="色温度選択値B/G" />
+			<entry val="0x1014" name="色温度選択値R/G" />
+			<entry val="0x1015" name="WB補正モード、検出方法" />
+			<entry val="0x1016" name="WB有効ｴﾘｱ数" />
+			<entry val="0x1017" name="WB Rｹﾞｲﾝ､ﾌﾟﾘWB Rｹﾞｲﾝ [RAW]" />
+			<entry val="0x1018" name="WB Bｹﾞｲﾝ､ﾌﾟﾘWB Bｹﾞｲﾝ [RAW]" />
+			<entry val="0x1019" name="ﾏﾄﾘｯｸｽ選択番号" />
+			<entry val="0x101A" name="シリアルナンバ" />
+			<entry val="0x101B" name="定常光評価値（外付ｽﾄﾛﾎﾞﾌﾟﾘ1）" />
+			<entry val="0x101C" name="定常光評価値（外付ｽﾄﾛﾎﾞﾌﾟﾘ2）" />
+			<entry val="0x101D" name="定常光評価値（内蔵ｽﾄﾛﾎﾞﾌﾟﾘ1）" />
+			<entry val="0x101E" name="定常光評価値（内蔵ｽﾄﾛﾎﾞﾌﾟﾘ2）" />
+			<entry val="0x101F" name="外付ｽﾄﾛﾎﾞﾌﾟﾘ1評価値" />
+			<entry val="0x1020" name="外付ｽﾄﾛﾎﾞﾌﾟﾘ2評価値" />
+			<entry val="0x1021" name="内蔵ｽﾄﾛﾎﾞﾌﾟﾘ1評価値" />
+			<entry val="0x1022" name="内蔵ｽﾄﾛﾎﾞﾌﾟﾘ2評価値" />
+			<entry val="0x1023" name="ｽﾄﾛﾎﾞ露出補正" />
+			<entry val="0x1024" name="内蔵ｽﾄﾛﾎﾞ選択発光ﾃｰﾌﾞﾙ" />
+			<entry val="0x1025" name="専用外付ｽﾄﾛﾎﾞ発光ＧＶ値" />
+			<entry val="0x1026" name="専用外付ｽﾄﾛﾎﾞのﾊﾞｳﾝｽ" />
+			<entry val="0x1027" name="専用外付ｽﾄﾛﾎﾞのｽﾞｰﾑ" />
+			<entry val="0x1028" name="専用外付ｽﾄﾛﾎﾞﾓｰﾄﾞ" />
+			<entry val="0x1029" name="階調モード [RAW]" />
+			<entry val="0x102A" name="エッジ強調 [RAW]" />
+			<entry val="0x102B" name="色抑圧係数 [RAW]" />
+			<entry val="0x102C" name="ＲＡＷデータ１画素あたりのｂｉｔ構成[RAW]" />
+			<entry val="0x102D" name="コアリング値 [RAW]" />
+			<entry val="0x102E" name="ＲＧＢ３板化処理後の画像の幅 [RAW]" />
+			<entry val="0x102F" name="ＲＧＢ３板化処理後の画像の高さ [RAW]" />
+			<entry val="0x1030" name="ストロボシーン判定結果（シーンNo）" />
+			<entry val="0x1031" name="ストロボシーン判定時の測光エリア" />
+			<entry val="0x1032" name="HAF時の最終AF" />
+			<entry val="0x1033" name="ストロボシーンデータ" />
+			<entry val="0x1034" name="ＪＰＥＧ圧縮率" />
+			<entry val="0x1035" name="再生用画像フォーマット" />
+			<entry val="0x1036" name="再生用画像データ記録位置" />
+			<entry val="0x1037" name="再生用画像データサイズ" />
+			<entry val="0x1038" name="AF結果" />
+			<entry val="0x1039" name="CCDスキャン方式" />
+			<entry val="0x103A" name="ノイズリダクションモード" />
+			<entry val="0x103B" name="∞レンズ位置" />
+			<entry val="0x103C" name="最至近レンズ位置" />
+			<entry val="0x103D" name="中央被写体輝度" />
+			<entry val="0x103E" name="周辺被写体輝度" />
+			<entry val="0x103F" name="フィールド数 [Poca RAW]" />
+			<entry val="0x1040" name="サムネール画像方向" />
+<entry val="0x1041" name="ホワイトバランス補正" />
+<entry val="0x1042" name="WB検出過程識別ID" />
+<entry val="0x1043" name="専用外付ストロボID" />
+<entry val="0x1044" name="専用外付ストロボ識別コード" />
+<entry val="0x1045" name="専用外付けストロボファームVer." />
+<entry val="0x1046" name="BODYファームバージョン" />
+			<ifd type="undefined" val="0x2010" name="Hardware 情報IFD" ifd_name="MakerNote::Hardware IFD">
+				<entry val="0x0000" name="Makernote/Hardwareバージョン" />
+				<entry val="0x0100" name="カメラタイプ" />
+				<entry val="0x0101" name="BODYシリアルナンバ" />
+				<entry val="0x0102" name="MCシリアルナンバ" />
+				<entry val="0x0103" name="CCDの対角長" />
+				<entry val="0x0104" name="BODYファームバージョン" />
+				<entry val="0x0200" name="レンズタイプ" />
+				<entry val="0x0201" name="レンズＩＤ" />
+				<entry val="0x0202" name="レンズシリアルナンバー" />
+				<entry val="0x0203" name="レンズ名" />
+				<entry val="0x0204" name="レンズファームバージョン" />
+				<entry val="0x0205" name="レンズ開放F値 (Wide端時)" />
+				<entry val="0x0206" name="レンズ開放F値 (Tele端時)" />
+				<entry val="0x0207" name="レンズ最短焦点距離" />
+				<entry val="0x0208" name="レンズ最長焦点距離" />
+				<entry val="0x0209" name="絞り段数" />
+				<entry val="0x020A" name="開放Av値" />
+				<entry val="0x020B" name="レンズ機能" />
+				<entry val="0x0300" name="レンズアダプタタイプ１" />
+				<entry val="0x0301" name="レンズアダプタＩＤ１" />
+				<entry val="0x0302" name="レンズアダプタシリアルナンバー１" />
+				<entry val="0x0303" name="レンズアダプタ名１" />
+				<entry val="0x0304" name="アダプタファームバージョン１" />
+				<entry val="0x0400" name="レンズアダプタタイプ２" />
+				<entry val="0x0401" name="レンズアダプタＩＤ２" />
+				<entry val="0x0402" name="レンズアダプタシリアルナンバー２" />
+				<entry val="0x0403" name="レンズアダプタ名２" />
+				<entry val="0x0404" name="レンズアダプタファームバージョン２" />
+				<entry val="0x1000" name="専用外付ストロボID" />
+				<entry val="0x1001" name="専用外付ストロボ識別コード" />
+				<entry val="0x1002" name="専用外付けストロボファームVer." />
+				<entry val="0x1003" name="専用外付けストロボシリアルNo." />
+			</ifd>
+			<ifd type="undefined" val="0x2050" name="Debug 情報IFD" ifd_name="MakerNote::Debug IFD">
+				<entry val="0x0000" name="Makernote/Debugバージョン" />
+				<entry val="0x0200" name="シャッタースピード" />
+				<entry val="0x0201" name="ゲイン" />
+				<entry val="0x0202" name="絞り値" />
+				<entry val="0x0203" name="輝度値" />
+				<entry val="0x0204" name="中央被写体輝度値" />
+				<entry val="0x0205" name="光源検知センサ輝度（可視）" />
+				<entry val="0x0206" name="光源検知センサ輝度（赤外）" />
+				<entry val="0x0207" name="光源判定結果" />
+				<entry val="0x0208" name="AEセンサ情報" />
+				<entry val="0x0209" name="AEロックモード" />
+				<entry val="0x020A" name="プログラムシフト量" />
+				<entry val="0x020B" name="逆光判定スレッシュ値" />
+				<entry val="0x020C" name="交換レンズ補正量" />
+				<entry val="0x020D" name="定常光評価値" />
+				<entry val="0x020E" name="外付ｽﾄﾛﾎﾞﾌﾟﾘ評価値" />
+				<entry val="0x020F" name="内蔵ｽﾄﾛﾎﾞﾌﾟﾘ評価値" />
+				<entry val="0x0210" name="ストロボシーン判定結果（シーンNo）" />
+				<entry val="0x0211" name="ストロボシーン判定時の測光エリア" />
+				<entry val="0x0212" name="ストロボシーンデータ" />
+				<entry val="0x0213" name="ストロボ発光比率" />
+				<entry val="0x0214" name="逆光判定結果" />
+				<entry val="0x0215" name="光源判定信頼性" />
+<entry val="0x0216" name="選択露光の中央重点平均Y評価値" />
+<entry val="0x0217" name="簡易WB係数_Rゲイン" />
+<entry val="0x0218" name="簡易WB係数_Bゲイン" />
+				<entry val="0x0300" name="撮影時ｽﾞｰﾑ位置" />
+				<entry val="0x0301" name="撮影時ﾌｫｰｶｽ位置" />
+				<entry val="0x0302" name="AF結果" />
+				<entry val="0x0303" name="∞レンズ位置" />
+				<entry val="0x0304" name="最至近レンズ位置" />
+				<entry val="0x0305" name="被写体距離" />
+				<entry val="0x0306" name="鏡枠温度" />
+				<entry val="0x0307" name="補助光情報" />
+				<entry val="0x0308" name="マルチAF情報" />
+				<entry val="0x0309" name="動体情報" />
+				<entry val="0x030A" name="デフォーカス量" />
+				<entry val="0x030B" name="駆動パルス数" />
+				<entry val="0x030C" name="AF信頼性係数" />
+				<entry val="0x030D" name="AF積分時間" />
+				<entry val="0x030E" name="動体予測量" />
+				<entry val="0x030F" name="AFセンサ温度情報" />
+				<entry val="0x0310" name="HAF時の最終AF" />
+				<entry val="0x0311" name="AFエリア" />
+				<entry val="0x0312" name="HPF係数" />
+				<entry val="0x0313" name="AFスタート位置" />
+				<entry val="0x0314" name="AF時Vdstep" />
+				<entry val="0x0315" name="A/PAF合焦位置" />
+				<entry val="0x0316" name="AF時被写体輝度" />
+				<entry val="0x0317" name="ＬＰＦ係数" />
+				<entry val="0x0318" name="合焦結果" />
+				<entry val="0x0319" name="FCエンコーダ" />
+				<entry val="0x031A" name="動体予測パラメータ" />
+				<entry val="0x031B" name="フォーカスモードデバッグ情報" />
+				<entry val="0x031C" name="HPF1AF合焦位置" />
+				<entry val="0x031D" name="HPF2AF合焦位置" />
+				<entry val="0x031E" name="HPF3AF合焦位置" />
+				<entry val="0x031F" name="フォーカスレンジ" />
+				<entry val="0x0320" name="レンズ駆動来歴" />
+				<entry val="0x0321" name="演算時フォーカス位置" />
+				<entry val="0x0322" name="点光源合焦位置" />
+				<entry val="0x0323" name="存在条件判定結果位置" />
+				<entry val="0x0324" name="至近レンズ位置" />
+				<entry val="0x0400" name="レンズ単体AV値" />
+				<entry val="0x0401" name="レンズ単体焦点距離" />
+				<entry val="0x0402" name="レンズ状態" />
+				<entry val="0x1200" name="ストロボ調光方式" />
+				<entry val="0x1201" name="発光時のストロボ状態" />
+				<entry val="0x1202" name="内蔵ｽﾄﾛﾎﾞ選択発光ﾃｰﾌﾞﾙ" />
+				<entry val="0x1203" name="専用外付ｽﾄﾛﾎﾞ発光ＧＶ値" />
+				<entry val="0x1204" name="専用外付ｽﾄﾛﾎﾞのﾊﾞｳﾝｽ" />
+				<entry val="0x1205" name="専用外付ｽﾄﾛﾎﾞのｽﾞｰﾑ" />
+				<entry val="0x1206" name="FP発光" />
+				<entry val="0x1207" name="専用外付ストロボダメージ" />
+				<entry val="0x1208" name="内蔵ストロボポップアップ状態" />
+				<entry val="0x1209" name="内蔵ストロボ拡張" />
+				<entry val="0x1500" name="CCD温度検出値" />
+			</ifd>
+			<ifd type="undefined" val="0x2040" name="ImageProcessor 情報IFD" ifd_name="MakerNote::ImageProcessor IFD">
+				<entry val="0x0000" name="Makernote/ImageProcessorバージョン" />
+				<entry val="0x0100" name="WBゲイン" />
+				<entry val="0x0101" name="WBゲイン（AWB）" />
+				<entry val="0x0102" name="WBゲイン（3000K）" />
+				<entry val="0x0103" name="WBゲイン（3300K）" />
+				<entry val="0x0104" name="WBゲイン（3600K）" />
+				<entry val="0x0105" name="WBゲイン（3900K）" />
+				<entry val="0x0106" name="WBゲイン（4000--K）" />
+				<entry val="0x0107" name="WBゲイン（4300K）" />
+				<entry val="0x0108" name="WBゲイン（4500--K）" />
+				<entry val="0x0109" name="WBゲイン（4800K）" />
+				<entry val="0x010A" name="WBゲイン（5300K）" />
+				<entry val="0x010B" name="WBゲイン（6000K）" />
+				<entry val="0x010C" name="WBゲイン（6600K）" />
+				<entry val="0x010D" name="WBゲイン（7500K）" />
+				<entry val="0x010E" name="WBゲイン（OTWB1)" />
+				<entry val="0x010F" name="WBゲイン（OTWB2)" />
+				<entry val="0x0110" name="WBゲイン（OTWB3)" />
+				<entry val="0x0111" name="WBゲイン（OTWB4)" />
+				<entry val="0x0112" name="プリWBゲイン" />
+				<entry val="0x0113" name="AE補正ゲイン（3000K）" />
+				<entry val="0x0114" name="AE補正ゲイン（3300K）" />
+				<entry val="0x0115" name="AE補正ゲイン（3600K）" />
+				<entry val="0x0116" name="AE補正ゲイン（3900K）" />
+				<entry val="0x0117" name="AE補正ゲイン（4000--K）" />
+				<entry val="0x0118" name="AE補正ゲイン（4300K）" />
+				<entry val="0x0119" name="AE補正ゲイン（4500--K）" />
+				<entry val="0x011A" name="AE補正ゲイン（4800K）" />
+				<entry val="0x011B" name="AE補正ゲイン（5300K）" />
+				<entry val="0x011C" name="AE補正ゲイン（6000K）" />
+				<entry val="0x011D" name="AE補正ゲイン（6600K）" />
+				<entry val="0x011E" name="AE補正ゲイン（7500K）" />
+				<entry val="0x011F" name="AE補正ゲイン" />
+				<entry val="0x0200" name="カラーマトリクスデータ" />
+				<entry val="0x0201" name="カラーマトリクスデータ（sRGB,AWB）" />
+				<entry val="0x0202" name="カラーマトリクスデータ（sRGB_3000K）" />
+				<entry val="0x0203" name="カラーマトリクスデータ（sRGB_3300K）" />
+				<entry val="0x0204" name="カラーマトリクスデータ（sRGB_3600K）" />
+				<entry val="0x0205" name="カラーマトリクスデータ（sRGB_3900K）" />
+				<entry val="0x0206" name="カラーマトリクスデータ（sRGB_4000--K）" />
+				<entry val="0x0207" name="カラーマトリクスデータ（sRGB_4300K）" />
+				<entry val="0x0208" name="カラーマトリクスデータ（sRGB_4500--K）" />
+				<entry val="0x0209" name="カラーマトリクスデータ（sRGB_4800K）" />
+				<entry val="0x020A" name="カラーマトリクスデータ（sRGB_5300K）" />
+				<entry val="0x020B" name="カラーマトリクスデータ（sRGB_6000K）" />
+				<entry val="0x020C" name="カラーマトリクスデータ（sRGB_6600K）" />
+				<entry val="0x020D" name="カラーマトリクスデータ（sRGB_7500K）" />
+				<entry val="0x020E" name="カラーマトリクスデータ（AdobeRGB,AWB）" />
+				<entry val="0x020F" name="カラーマトリクスデータ（AdobeRGB_3000K）" />
+				<entry val="0x0210" name="カラーマトリクスデータ（AdobeRGB_3300K）" />
+				<entry val="0x0211" name="カラーマトリクスデータ（AdobeRGB_3600K）" />
+				<entry val="0x0212" name="カラーマトリクスデータ（AdobeRGB_3900K）" />
+				<entry val="0x0213" name="カラーマトリクスデータ（AdobeRGB_4000--K）" />
+				<entry val="0x0214" name="カラーマトリクスデータ（AdobeRGB_4300K）" />
+				<entry val="0x0215" name="カラーマトリクスデータ（AdobeRGB_4500--K）" />
+				<entry val="0x0216" name="カラーマトリクスデータ（AdobeRGB_4800K）" />
+				<entry val="0x0217" name="カラーマトリクスデータ（AdobeRGB_5300K）" />
+				<entry val="0x0218" name="カラーマトリクスデータ（AdobeRGB_6000K）" />
+				<entry val="0x0219" name="カラーマトリクスデータ（AdobeRGB_6600K）" />
+				<entry val="0x021A" name="カラーマトリクスデータ（AdobeRGB_7500K）" />
+				<entry val="0x021B" name="カラーマトリクスデータ（ProPhotoRGB,AWB）" />
+				<entry val="0x021C" name="カラーマトリクスデータ（ProPhotoRGB_3000K）" />
+				<entry val="0x021D" name="カラーマトリクスデータ（ProPhotoRGB_3300K）" />
+				<entry val="0x021E" name="カラーマトリクスデータ（ProPhotoRGB_3600K）" />
+				<entry val="0x021F" name="カラーマトリクスデータ（ProPhotoRGB_3900K）" />
+				<entry val="0x0220" name="カラーマトリクスデータ（ProPhotoRGB_4000--K）" />
+				<entry val="0x0221" name="カラーマトリクスデータ（ProPhotoRGB_4300K）" />
+				<entry val="0x0222" name="カラーマトリクスデータ（ProPhotoRGB_4500--K）" />
+				<entry val="0x0223" name="カラーマトリクスデータ（ProPhotoRGB_4800K）" />
+				<entry val="0x0224" name="カラーマトリクスデータ（ProPhotoRGB_5300K）" />
+				<entry val="0x0225" name="カラーマトリクスデータ（ProPhotoRGB_6000K）" />
+				<entry val="0x0226" name="カラーマトリクスデータ（ProPhotoRGB_6600K）" />
+				<entry val="0x0227" name="カラーマトリクスデータ（ProPhotoRGB_7500K）" />
+				<entry val="0x0250" name="カラーマトリクスデータ（彩度、sRGB）" />
+				<entry val="0x0251" name="カラーマトリクスデータ（色合い、sRGB）" />
+				<entry val="0x0252" name="カラーマトリクスデータ（コントラスト、sRGB）" />
+				<entry val="0x0253" name="カラーマトリクスデータ（彩度、AdobeRGB）" />
+				<entry val="0x0254" name="カラーマトリクスデータ（色合い、AdobeRGB）" />
+				<entry val="0x0255" name="カラーマトリクスデータ（コントラスト、AdobeRGB）" />
+				<entry val="0x0256" name="カラーマトリクスデータ（彩度、ProPhotoRGB）" />
+				<entry val="0x0257" name="カラーマトリクスデータ（色合い、ProPhotoRGB）" />
+				<entry val="0x0258" name="カラーマトリクスデータ（コントラスト、ProPhotoRGB）" />
+				<entry val="0x0300" name="エッジ強調" />
+				<entry val="0x0301" name="エッジ強調（SH1-7)" />
+				<entry val="0x0310" name="コアリング値" />
+				<entry val="0x0311" name="コアリング値（SH1-7）" />
+				<entry val="0x0320" name="G段差補正用LPF" />
+				<entry val="0x0321" name="G段差輝度スレッシュ" />
+				<entry val="0x0330" name="ノイズプロファイル(ノイズ量)" />
+				<entry val="0x0331" name="ノイズプロファイル(輝度レベル)" />
+				<entry val="0x0332" name="ノイズフィルタ係数" />
+				<entry val="0x0333" name="ノイズフィルタゲイン" />
+				<entry val="0x0334" name="G段差輝度スレッシュ（ノイズ）" />
+				<entry val="0x0340" name="クロマ補正係数（彩度,sRGB）" />
+				<entry val="0x0341" name="クロマ補正係数（色相,sRGB）" />
+				<entry val="0x0342" name="クロマ補正係数（彩度,Adobe）" />
+				<entry val="0x0343" name="クロマ補正係数（色相,Adobe）" />
+				<entry val="0x0344" name="クロマ補正係数（彩度,Prophoto）" />
+				<entry val="0x0345" name="クロマ補正係数（色相Prophoto）" />
+				<entry val="0x0600" name="OB値" />
+				<entry val="0x0601" name="色抑圧係数" />
+				<entry val="0x0602" name="色抑圧係数（sRGB)" />
+				<entry val="0x0603" name="色抑圧係数（AdobeRGB)" />
+				<entry val="0x0604" name="色抑圧係数（ProPhotoRGB）" />
+				<entry val="0x0610" name="デジタルゲイン" />
+				<entry val="0x0611" name="ＲＡＷデータ１画素あたりのｂｉｔ構成" />
+				<entry val="0x0612" name="ＲＧＢ３板化処理の開始位置座標（H)" />
+				<entry val="0x0613" name="ＲＧＢ３板化処理の開始位置座標（V)" />
+				<entry val="0x0614" name="ＲＧＢ３板化処理後の画像の幅" />
+				<entry val="0x0615" name="ＲＧＢ３板化処理後の画像の高さ" />
+				<entry val="0x0616" name="フィールド数 [Poca RAW]" />
+				<entry val="0x0617" name="ガンマテーブルセット選択番号" />
+				<entry val="0x0620" name="データパッキング方式" />
+<entry val="0x0630" name="対応色空間" />
+				<entry val="0x0800" name="歪み補正データ" />
+				<entry val="0x0801" name="シェーディング補正データ" />
+				<entry val="0x0802" name="シェーディング1区分内の画素数" />
+				<entry val="0x0803" name="ノイズフィルターパラメータ" />
+				<entry val="0x1000" name="WB有効ｴﾘｱ数" />
+				<entry val="0x1001" name="色温度選択値B/G" />
+				<entry val="0x1002" name="色温度選択値R/G" />
+				<entry val="0x1003" name="ﾏﾄﾘｯｸｽ選択番号" />
+				<entry val="0x1004" name="WB検出過程識別ID" />
+				<entry val="0x1010" name="ノイズリダクション" />
+				<entry val="0x1011" name="歪み補正" />
+				<entry val="0x1012" name="シェーディング補正" />
+				<entry val="0x1100" name="WBデータ開始アドレス" />
+				<entry val="0x1101" name="WBデータサイズ指定" />
+				<entry val="0x1102" name="WBデータパターン" />
+			</ifd>
+			<ifd type="undefined" val="0x2020" name="CameraMode 情報IFD" ifd_name="MakerNote::CameraMode IFD">
+				<entry val="0x0000" name="Makernote/CameraModeバージョン" />
+				<entry val="0x0100" name="再生用画像フォーマット" />
+				<entry val="0x0101" name="再生用画像データ記録位置" />
+				<entry val="0x0102" name="再生用画像データサイズ" />
+				<entry val="0x0200" name="露出モード" />
+				<entry val="0x0201" name="AEロック の有無" />
+				<entry val="0x0202" name="測光モード" />
+				<entry val="0x0300" name="マクロモード" />
+				<entry val="0x0301" name="フォーカスモード" />
+				<entry val="0x0302" name="フォーカスフレーム合焦フラグ" />
+				<entry val="0x0303" name="フォーカスフレーム位置要素数" />
+				<entry val="0x0304" name="フォーカスフレーム位置座標" />
+				<entry val="0x0400" name="ストロボモード" />
+				<entry val="0x0401" name="ｽﾄﾛﾎﾞ露出補正" />
+				<entry val="0x0402" name="専用外付ｽﾄﾛﾎﾞﾓｰﾄﾞ" />
+				<entry val="0x0500" name="WB補正モード" />
+				<entry val="0x0501" name="ホワイトバランス" />
+				<entry val="0x0502" name="ホワイトバランス補正" />
+				<entry val="0x0503" name="彩度設定" />
+				<entry val="0x0504" name="色合い設定" />
+				<entry val="0x0505" name="コントラスト設定" />
+				<entry val="0x0506" name="シャープネス設定" />
+				<entry val="0x0507" name="カラー設定" />
+				<entry val="0x0508" name="RAW展開エンジン" />
+				<entry val="0x0509" name="シーンプログラム" />
+				<entry val="0x050A" name="ノイズリダクションモード" />
+				<entry val="0x050B" name="ディストーション補正モード" />
+				<entry val="0x050C" name="シェーディング補正モード" />
+				<entry val="0x050D" name="ＪＰＥＧ圧縮率" />
+				<entry val="0x050E" name="CCDスキャン方式" />
+				<entry val="0x050F" name="階調撮影" />
+<entry val="0x0520" name="仕上がりモード" />
+<entry val="0x0521" name="彩度補正設定" />
+<entry val="0x0522" name="色合い補正設定" />
+<entry val="0x0523" name="コントラスト補正設定" />
+<entry val="0x0524" name="シャープネス補正設定" />
+<entry val="0x0525" name="フィルター効果" />
+<entry val="0x0526" name="調色" />
+				<entry val="0x0600" name="ドライブモード＋連番" />
+				<entry val="0x0601" name="パノラマモード" />
+				<entry val="0x0602" name="グループＩＤ（仮：特許調査中）" />
+				<entry val="0x0603" name="画質モード" />
+<entry val="0x0800" name="撮影カード情報" />
+			</ifd>
+			<ifd type="undefined" val="0x2030" name="ApplicationMode 情報IFD" ifd_name="MakerNote::ApplicationMode IFD">
+				<entry val="0x0000" name="Makernote/ApplicationModeバージョン" />
+				<entry val="0x0100" name="RAW現像時 露出補正 (単位: EV)" />
+				<entry val="0x0101" name="ホワイトバランス(単位: K、補正値含まず)" />
+				<entry val="0x0102" name="ホワイトバランス補正（単位: STEP)" />
+				<entry val="0x0103" name="ホワイトバランスRGB平均値" />
+				<entry val="0x0104" name="彩度設定" />
+				<entry val="0x0105" name="色合い設定" />
+				<entry val="0x0106" name="コントラスト設定" />
+				<entry val="0x0107" name="シャープネス設定" />
+				<entry val="0x0108" name="カラー設定" />
+				<entry val="0x0109" name="RAW展開エンジン" />
+				<entry val="0x010A" name="ノイズリダクションモード" />
+				<entry val="0x010B" name="サムネール画像方向" />
+				<entry val="0x010C" name="RAW現像設定" />
+				<entry val="0x0800" name="テンプレート機能" />
+			</ifd>
+			<ifd type="undefined" val="0x2031" name="AppProperty IFD" ifd_name="MakerNote::AppProperty IFD">
+				<entry val="0x0000" name="Makernote AppProperty Version" />
+				<entry val="0x0100" name="ExposureBias" />
+				<entry val="0x0101" name="WhiteBalanceMode" />
+				<entry val="0x0102" name="ColorTemperature" />
+				<entry val="0x0103" name="WhiteBalanceAdjust" />
+				<entry val="0x0104" name="WB_Gain" />
+				<entry val="0x0105" name="Contrast" />
+				<entry val="0x0106" name="Sharpness" />
+				<entry val="0x0107" name="Saturation" />
+				<entry val="0x0108" name="Hue" />
+				<entry val="0x0109" name="ColorSpace" />
+				<entry val="0x010A" name="NoiseReductionMode" />
+				<entry val="0x010B" name="RawEngine" />
+			</ifd>
+		<!-- C-8080WZ start-->
+			<ifd type="undefined" val="0x3000" name="Raw Development 情報IFD" ifd_name="MakerNote::RawDevelopment IFD">
+				<entry val="0x0000" name="Makernote/RawDevelopmentバージョン" />
+				<entry val="0x0100" name="WBゲイン" />
+				<entry val="0x0110" name="WBゲイン（AWB）" />
+				<entry val="0x0120" name="WBゲイン（日陰）" />
+				<entry val="0x0121" name="WBゲイン（曇天）" />
+				<entry val="0x0122" name="WBゲイン（晴天）" />
+				<entry val="0x0123" name="WBゲイン（電球）" />
+				<entry val="0x0124" name="WBゲイン（夕日）" />
+				<entry val="0x0130" name="WBゲイン（蛍光灯1）" />
+				<entry val="0x0131" name="WBゲイン（蛍光灯2）" />
+				<entry val="0x0132" name="WBゲイン（蛍光灯3）" />
+				<entry val="0x0133" name="WBゲイン（蛍光灯4）" />
+				<entry val="0x0200" name="カラーマトリクスデータ" />
+				<entry val="0x0240" name="基本カラーマトリクスデータ" />
+				<entry val="0x0250" name="カラーマトリクスデータ（彩度）" />
+				<entry val="0x0251" name="カラーマトリクスデータ（色相）" />
+				<entry val="0x0252" name="カラーマトリクスデータ（コントラスト）" />
+				<entry val="0x0300" name="エッジ強調" />
+				<entry val="0x0301" name="エッジ強調（SH1-11)" />
+				<entry val="0x0310" name="コアリング値" />
+				<entry val="0x0311" name="コアリング値（SH1-11）" />
+				<entry val="0x0600" name="OB値" />
+				<entry val="0x0601" name="色抑圧係数" />
+				<entry val="0x0611" name="ＲＡＷデータ１画素あたりのｂｉｔ構成" />
+				<entry val="0x0612" name="ＲＧＢ３板化処理の開始位置座標（H)" />
+				<entry val="0x0613" name="ＲＧＢ３板化処理の開始位置座標（V)" />
+				<entry val="0x0614" name="ＲＧＢ３板化処理後の画像の幅" />
+				<entry val="0x0615" name="ＲＧＢ３板化処理後の画像の高さ" />
+				<entry val="0x0616" name="フィールド数" />
+				<entry val="0x0617" name="ガンマテーブルセット選択番号" />
+				<entry val="0x0800" name="再生用画像フォーマット" />
+				<entry val="0x0801" name="再生用画像データ記録位置" />
+				<entry val="0x0802" name="再生用画像データサイズ" />
+				<entry val="0x1000" name="WB補正モード" />
+				<entry val="0x1001" name="ホワイトバランス補正" />
+				<entry val="0x1010" name="彩度設定" />
+				<entry val="0x1011" name="色相設定" />
+				<entry val="0x1012" name="コントラスト設定" />
+				<entry val="0x1013" name="シャープネス設定" />
+				<entry val="0x2000" name="RAW現像時 露出補正 (単位: EV)" />
+				<entry val="0x2001" name="WB補正モード" />
+				<entry val="0x2002" name="ホワイトバランス補正" />
+				<entry val="0x2010" name="ホワイトバランスRGB平均値" />
+				<entry val="0x2020" name="彩度設定" />
+				<entry val="0x2021" name="色相設定" />
+				<entry val="0x2022" name="コントラスト設定" />
+				<entry val="0x2023" name="シャープネス設定" />
+				<entry val="0x2030" name="サムネール画像方向" />
+				<entry val="0x2040" name="RAW現像設定" />
+			</ifd>
+		<!-- C-8080WZ end-->
+		</ifd>
+	</ifd>
+	<ifd type="long" val="0x8825" name="GPS タグ" ifd_name="GPS IFD">
+		<entry val="0x0000" name="GPS タグのバージョン" />
+		<entry val="0x0001" name="北緯(N)or 南緯(S)" />
+		<entry val="0x0002" name="緯度（数値）" />
+		<entry val="0x0003" name="東経(E)or 西経(W)" />
+		<entry val="0x0004" name="経度（数値）" />
+		<entry val="0x0005" name="高度の基準" />
+		<entry val="0x0006" name="高度（数値）" />
+		<entry val="0x0007" name="GPS 時間（原子時計の時間）" />
+		<entry val="0x0008" name="測位につかった衛星信号" />
+		<entry val="0x0009" name="GPS 受信機の状態" />
+		<entry val="0x000A" name="GPS の測位方法" />
+		<entry val="0x000B" name="測位の信頼性" />
+		<entry val="0x000C" name="速度の単位" />
+		<entry val="0x000D" name="速度（数値）" />
+		<entry val="0x000E" name="進行方向の単位" />
+		<entry val="0x000F" name="進行方向（数値）" />
+		<entry val="0x0010" name="撮影した画像の方向の単位" />
+		<entry val="0x0011" name="撮影した画像の方向" />
+		<entry val="0x0012" name="測位に用いた地図データ" />
+		<entry val="0x0013" name="目的地の北緯(N)or 南緯(S)" />
+		<entry val="0x0014" name="目的地の緯度（数値）" />
+		<entry val="0x0015" name="目的地の東経(E)or 西経(W)" />
+		<entry val="0x0016" name="目的地の経度（数値）" />
+		<entry val="0x0017" name="目的地の方角の単位" />
+		<entry val="0x0018" name="目的の方角（数値）" />
+		<entry val="0x0019" name="目的地までの距離の単位" />
+		<entry val="0x001A" name="目的地までの距離（数値）" />
+		<entry val="0x001B" name="測位方式の名称" />
+		<entry val="0x001C" name="測位地点の名称" />
+		<entry val="0x001D" name="GPS 日付" />
+		<entry val="0x001E" name="GPS 補正測位" />
+	</ifd>
+</ifd>

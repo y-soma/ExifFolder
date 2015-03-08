@@ -1,0 +1,43 @@
+マルチスレッド組み込み
+
+
+// 2,3秒以上かかったらプログレス表示する
+// ファイル移動コピーの高速化
+
+#if 0
+
+	// プログレス設定方法
+
+		//プログレスバーの範囲を0-300にする           
+        SendMessage(hProg,PBM_SETRANGE,(WPARAM)0,MAKELPARAM(0,300));
+        //現在位置を設定  
+        SendMessage(hProg,PBM_SETPOS,150,0);
+        //ステップの範囲を設定 
+        SendMessage(hProg,PBM_SETSTEP,10,0);
+ 
+        //最大値を取得
+        _MAX=SendMessage(hProg,PBM_GETRANGE,0,0); 
+        //現在値を取得
+        _POS=SendMessage(hProg,PBM_GETPOS,0,0); 
+        //最大値を超えない場合は1ステップ(10)&テキストに現在値を設定
+        if (_POS!=_MAX)    
+        {
+            SendMessage(hProg,PBM_STEPIT,0,0);
+            wsprintf(buffer,"現在のポシション:%d",SendMessage(hProg,PBM_GETPOS,0,0));
+            SendMessage(hStatic,WM_SETTEXT,0,(LPARAM)buffer);
+        }
+       
+        //最小値を取得
+        _MIN=SendMessage(hProg,PBM_GETRANGE,1,0); 
+        //現在値を取得
+        _POS=SendMessage(hProg,PBM_GETPOS,0,0); 
+        //最小値を超えない場合は-1ステップ(10)&テキストに現在値を設定
+        if (_POS!=_MIN)    
+        {
+            SendMessage(hProg,PBM_SETPOS,_POS-10,0);
+            wsprintf(buffer,"現在のポシション:%d",SendMessage(hProg,PBM_GETPOS,0,0));
+            SendMessage(hStatic,WM_SETTEXT,0,(LPARAM)buffer);
+        }
+
+
+#endif
